@@ -13,7 +13,83 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+<style>
+  /* Footer Styles */
+.footer {
+  position: relative;
+  width: 100%;
+  background: #85888e;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+section {
+  perspective: 1000px;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  color: #333;
+  transition: transform 1s;
+}
+
+section:hover h1 {
+  transform: rotateY(360deg);
+}
+</style>
 </head>
 <body>
     <header class="text-gray-400  body-font">
@@ -226,7 +302,19 @@
   </div>   
 
 </section>
-   
+ <footer class="footer">
+    
+    
+  <ul class="menu">
+    <li class="menu__item"><a href="#home" class="menu__link">Home</a></li>
+    <li class="menu__item"><a href="#About Us" class="menu__link">About Us</a></li>
+    <li class="menu__item"><a href="#products" class="menu__link">Products</a></li>
+    <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
+
+  </ul>
+  <p>&copy; 2024 Viramgam Granite - All Rights Reserved</p><br>
+  <p>|| Designed By: Mohammadsahil</p>
+</footer>  
 <script>
 
    document.addEventListener('DOMContentLoaded', function() {
